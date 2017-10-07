@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>b l o s m Player</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+<div id="container">
+	<div id="audio-image">
+		<img class="cover"/>
+	</div>
+	<div id="audio-player">
+    <div id="audio-controls">
+  		<div id="audio-info">
+        <div class="title"></div>
+        <div class="artist"></div>
+  		</div>
+  		 <input id="volume" type="range" min="0" max="10" value="5" step=".1" />
+  		 <br>
+  		 <div id="buttons" style="">
+  		 <span>
+  			<img src="images/prev.png" style="width:20px; height:20px;" id="prev">
+  			<img src="images/play.png" style="padding-left:5px; padding-right:5px;width:18px; height:18px;" id="play">
+  			<img src="images/pause.png" style="padding-left:5px; padding-right:5px; width:18px; height:18px;" id="pause">
+  			<img src="images/next.png" style="width:20px; height:20px;" id="next">
+  			</span>
+  		 </div>
+  		 <div class="clearfix"></div>
+  		 <div id="tracker">
+  			<div id="progressBar">
+  				<span id="progress"></span>
+  			</div>
+  			<span id="duration"></span>
+  		 </div>
+     </div>
+		 <div class="clearfix"></div>
+     <div id="audio-playlist">
+  		 <ul id="playlist" class="hidden">
+  			<li song="JustYouWait.wav" cover="cover1.jpg" artist="Luna Campos" trackName="Just You Wait"><div class="trackNumber">1 </div><div class="trackName">Just You Wait</div></li>
+  			<li song="TheresAlwaysSomeoneThatWantsYouMore3.wav" cover="cover1.jpg" artist="Luna Campos" trackName="Someone Who Always Wants You More"> <div class="trackNumber">2 </div><div class="trackName">Someone Who Always Wants You More</div></li>
+  			<li song="Usually.wav" cover="cover1.jpg" artist="Luna Campos" trackName="Usually"><div class="trackNumber"> 3 </div><div class="trackName">Usually</div></li>
+  			<li song="OutOfThisSpace.wav" cover="cover1.jpg" artist="Luna Campos" trackName="Out Of This Space"><div class="trackNumber"> 4 </div><div class="trackName">Out Of This Space</div></li>
+  			<li song="ProdigyOdyssey.wav" cover="cover1.jpg" artist="Luna Campos" trackName="Prodigy Oddysey"><div class="trackNumber"> 5 </div><div class="trackName">Prodigy Odyssey</div></li>
+  			<li song="TheMilkyWay.wav" cover="cover1.jpg" artist="Luna Campos" trackName="I Just Want To Be A Star"><div class="trackNumber"> 6 </div><div class="trackName">I Just Want To Be A Star</div></li>
+  		</ul>
+    </div>
+	</div>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

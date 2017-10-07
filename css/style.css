@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body{
+	font-family:arial;
+	font-size:13px;
+	line-height:1.5em;
+	background: #ff564c;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	width:595px;
+	height:260px;
+	background:#111;
+	/*overflow:auto;*/
+	margin:200px auto;
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Open Sans';
+}
+
+#audio-image{
+	position:relative;
+	overflow:hidden;
+	height:auto;
+  width:260px;
+	margin-bottom:15px;
+  display: inline-block;
+  position: fixed;
+}
+#audio-player{
+  display: inline-block;
+  width: 330px;
+  vertical-align: top;
+  position: relative;
+  margin-left: 260px;
+}
+#audio-info{
+	text-align:center;
+  margin-top: 5px;
+}
+#audio-controls{
+  display: inline-block;
+  background-color: #111;
+  width:330px;
+}
+#audio-info .title{
+	font-weight:bold;
+}
+#audio-info .artist{
+  color:#777;
+  font-size: 12px;
+}
+#audio-playlist{
+  height:120px;
+  overflow: scroll;
+}
+.cover{
+	width:100%;
+	z-index:1;
+}
+
+input#volume {
+	margin-left:15px;
+  width:91%;
+    -webkit-appearance: none !important;
+    background:#222;
+    height:4px;
+	margin-bottom:20px;
+}
+input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: white;
+    height:12px;
+    width:6px;
+}
+
+#buttons{
+  width: 76px;
+  margin:auto;
+}
+
+
+#playlist {
+  list-style-type: none;
+	padding:0px 10px 10px 10px;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
+    background-color: #1d1d1d;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+}
+
+#tracker{
+	position:relative;
+	width:100%;
+}
+#playlist li:hover{
+  background-color: #222;
+  transition: .1s;
+}
+#playlist li.active {
+  /*font-weight: bold;*/
+  transition: .1s;
+	color: #ff564c;
+  background-color: #222;
+  padding-left: 8px;
+}
+.trackNumber{
+  color:#959595;
+  display:inline;
+  padding-right: 10px;
+}
+.trackName{
+  display: inline;
+  font-weight: bold;
+}
+#progressBar {
+   width:260px;
+   margin-left:15px;
+   margin-bottom:20px;
+   margin-top:9px;
+   height:6px;
+   background-color:#222;
+   float:left;
+}
+
+#progress {
+   background-color: #ff564c;
+   height:6px;
+   margin-bottom:20px;
+   display:inline-block;
+}
+
+#duration{
+	position:absolute;
+	top:0;
+	right:10px;
+	padding:4px 8px;
+	background:#000;
+	border-radius:5px;
+}
